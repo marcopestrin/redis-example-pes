@@ -1,6 +1,6 @@
-import { createClient } from "redis";
+import redis from "redis";
 
-const client = createClient({
+export const client = redis.createClient({
   url: process.env.NODE_ENV === "production"
   ? `redis://${process.env.REDIS_USER}:${process.env.REDIS_PASSWORD}@${process.env.REDIS_HOSTNAME}:${process.env.REDIS_PORT}`
   : "redis://redis:6379",
