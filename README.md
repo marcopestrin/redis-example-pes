@@ -16,3 +16,4 @@ Run `docker-compose up -d --build` then `docker logs redis-example-pes -f`
 - GET http://localhost:4000/users
 - POST http://localhost:4000/users/getToken
 - POST http://localhost:4000/users/signup?token=1234567890
+- POST http://localhost:4000/data/mockData
